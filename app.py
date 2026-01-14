@@ -18,3 +18,12 @@ b = st.number_input(
   value = 1.0,
   step = 0.1
 )
+
+st.subheader("Jumlah Pias")
+
+n = st.number_input(
+  "Jumlah pias (n)"
+  min_value=1,
+  value=10,
+  step=1
+)
