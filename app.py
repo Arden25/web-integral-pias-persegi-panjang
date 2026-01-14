@@ -22,7 +22,7 @@ b = st.number_input(
 st.subheader("Jumlah Pias")
 
 n = st.number_input(
-  "Jumlah pias (n)"
+  "Jumlah pias (n)",
   min_value=1,
   value=10,
   step=1
