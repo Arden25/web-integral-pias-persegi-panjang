@@ -27,3 +27,9 @@ n = st.number_input(
   value=10,
   step=1
 )
+
+st.subheader("Lebar Pias")
+
+if n > 0:
+  h = (b - a) / n
+  st.write("Nilai lebar pias (h):", h)
