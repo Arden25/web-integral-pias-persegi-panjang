@@ -37,13 +37,14 @@ if n > 0:
 
 st.subheader("Hasil Integral (Metode Pias Persegi Panjang)")
 
-try:
-  x = np.linspace(a, b - h, int(n))
-  y = eval(fungsi)
-
-  integral = np.sum(y * h)
-
-  st.success(f"Hasil pendekatan integral = {integral}")
-
-except Exception as e:
-  st.error("Terjadi kesalahan pada fungsi. Pastikan f(x) ditulis dengan benar.")
+if button("Hitung Integral")
+  try:
+    x = np.linspace(a, b - h, int(n))
+    y = eval(fungsi)
+  
+    integral = np.sum(y * h)
+  
+    st.success(f"Hasil pendekatan integral = {integral}")
+  
+  except Exception as e:
+    st.error("Terjadi kesalahan pada fungsi. Pastikan f(x) ditulis dengan benar.")
