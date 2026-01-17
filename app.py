@@ -43,7 +43,7 @@ try:
 
   integral = np.sum(y * h)
 
-  st.succes(f"Hasil pendekatan integral = {integral}")
+  st.success(f"Hasil pendekatan integral = {integral}")
 
 except Exception as e:
   st.error("Terjadi kesalahan pada fungsi. Pastikan f(x) ditulis dengan benar.")
