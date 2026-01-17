@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 st.title("Aplikasi Solusi Integral")
 st.title("Metode Pias Persegi Panjang")
@@ -33,3 +34,16 @@ st.subheader("Lebar Pias")
 if n > 0:
   h = (b - a) / n
   st.write("Nilai lebar pias (h):", h)
+
+st.subheader("Hasil Integral (Metode Pias Persegi Panjang)")
+
+try:
+  x = np.linspace(a, b - h, int(n))
+  y = eval(fungsi)
+
+  integral = np.sum(y * h)
+
+  st.succes(f"Hasil pendekatan integral = {integral}")
+
+except Exception as e:
+  st.error("Terjadi kesalahan pada fungsi. Pastikan f(x) ditulis dengan benar.")
